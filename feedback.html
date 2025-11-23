@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Fitness Gym</title>
+    <link rel="stylesheet" href=".\style.css">
+    <style>
+
+        .container {
+            background-color: #ddd;
+            padding: 60px 0px;
+        }
+
+        .feedback-form {
+            width: 40%;
+            margin: auto;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px 15px;
+        }
+
+        .feedback-form h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .feedback-form .feedback {
+            width: 50%;
+            border: none;
+            border-radius: 1rem;
+            padding: 1.5%;
+            background: #242421;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div id="business-name-container">
+            <h1>Gold Fitness Gym</h1>
+        </div>
+        <a href="./index.html" id="logo-container">
+            <img id="logo" src="./images/logo.png" alt="logo">
+        </a>
+        <div id="nav-container" onclick="show_nav();">
+            <img src="./images/menu.png" id="menu-icon" alt="menu" width="40px">
+            <nav id="nav-links" class="display-none">
+                <div>
+                    <a href="./index.html">Home Page</a>
+                </div>
+                <div>
+                    <a href="./about.html">About us</a>
+                </div>
+                <div>
+                    <a href="./products.html">Products</a>
+                </div>
+                <div>
+                    <a href="./services.html">Our services</a>
+                </div>
+                <div>
+                    <a href="./contact.html">Contact us</a>
+                </div>
+                <div>
+                    <a href="./feedback.html">Give feedback</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr>
+
+    <!-- main body -->
+    <div class="container">
+        <form action="" method="post" class="feedback-form">
+            <h2>Drop Us a Feedback</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+                <dl><input type="text" name="TxtEmail" class="form-control" placeholder="Enter Email Address"></dl>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Contact no">
+            </div>
+            <div class="form-group">
+                <p>Did you get all your answers?</p>
+                <input type="radio" name="answer" id="answer1">
+                <label for="answer1">Yes</label><br>
+                <input type="radio" name="answer" id="answer2">
+                <label for="answer2">No</label>
+            </div>
+            <div class="form-group">
+                <p>Are you satisfied with our services?</p>
+                <input type="radio" name="satisfied" id="satisfied1">
+                <label for="satisfied1">Yes</label><br>
+                <input type="radio" name="satisfied" id="satisfied2">
+                <label for="satisfied2">No</label>
+            </div>
+            <textarea name="txtMsg" style="margin: 20px 0px 0px;" class="form-control" placeholder="Your Feedback" rows="6"></textarea>
+            <div class="form-group">
+                <div class="form-group">
+                    <p>What ratings do you give us out of 5?</p>
+                    <input type="radio" name="rating" id="rating1" value="Not satisfied">
+                    <label for="rating1">Not satisfied</label><br>
+                    <input type="radio" name="rating" id="rating2" value="Fair">
+                    <label for="rating2">Fair</label><br>
+                    <input type="radio" name="rating" id="rating3" value="Good">
+                    <label for="rating3">Good</label><br>
+                    <input type="radio" name="rating" id="rating4" Value="Excellent">
+                    <label for="rating4">Excellent</label><br>
+                    <input type="radio" name="rating" id="rating5" value="Satisfied">
+                    <label for="rating5">Satisfied</label>
+                </div>
+                <input type="submit" name="submit" style="margin-top: 20px;" class="btn" value="Send Feedback" style="outline: none" ;>
+            </div>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <hr>
+        <div id="socials">
+            <h2>Connect with us on socials</h2>
+            <div id="social-links">
+                <a target="_blank" href="https://www.facebook.com/"><img src="./images/facebook.png"
+                        alt="facebook social image"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="./images/instagram.png"
+                        alt="instagram social image"></a>
+                <a target="_blank" href="https://www.tiktok.com/"><img src="./images/tiktok.png"
+                        alt="tiktok social image"></a>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p style="text-align: center;">&copy; Gold Fitness Gym | 2025</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -105,6 +105,8 @@ footer img {
 .btn {
     background-color: #ffd000;
     color: black;
-    padding: 5px;
-    border-radius: 8px;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1.5px;
 }
