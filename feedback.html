@@ -75,17 +75,15 @@
         </div>
     </header>
     <hr>
-
-    <!-- main body -->
     <div class="container">
-        <form action="" method="post" class="feedback-form">
+        <form action="" method="post" class="feedback-form" onsubmit="return my_js_function()">
             <h2>Drop Us a Feedback</h2>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-                <dl><input type="text" name="TxtEmail" class="form-control" placeholder="Enter Email Address"></dl>
+                <input type="text" id="yourname" class="form-control" placeholder="Your Name"><br><br>
+                <input type="text" id="email" class="form-control" placeholder="Enter Email Address"><br><br>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Contact no">
+                <input type="text" id="contact" class="form-control" placeholder="Your Contact no" >
             </div>
             <div class="form-group">
                 <p>Did you get all your answers?</p>
@@ -96,12 +94,12 @@
             </div>
             <div class="form-group">
                 <p>Are you satisfied with our services?</p>
-                <input type="radio" name="satisfied" id="satisfied1">
+                <input type="radio" name="satisfied" id="answer3">
                 <label for="satisfied1">Yes</label><br>
-                <input type="radio" name="satisfied" id="satisfied2">
+                <input type="radio" name="satisfied" id="answer4">
                 <label for="satisfied2">No</label>
             </div>
-            <textarea name="txtMsg" style="margin: 20px 0px 0px;" class="form-control" placeholder="Your Feedback" rows="6"></textarea>
+            <textarea name="txtMsg" id="txtmsg" style="margin: 20px 0px 0px;" class="form-control" placeholder="Your Feedback" rows="6"></textarea>
             <div class="form-group">
                 <div class="form-group">
                     <p>What ratings do you give us out of 5?</p>
@@ -140,8 +138,8 @@
             <p style="text-align: center;">&copy; Gold Fitness Gym | 2025</p>
         </div>
     </footer>
-
+    </form>
     <script src="./script.js"></script>
+     
 </body>
-
 </html>
