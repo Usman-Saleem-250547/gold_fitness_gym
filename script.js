@@ -11,8 +11,8 @@ function my_js_function() {
     // Radio button checks
     const gotAnswersYes = document.getElementById("answer1").checked;
     const gotAnswersNo = document.getElementById("answer2").checked;
-    const satisfiedYes = document.getElementById("answer3").checked;
-    const satisfiedNo = document.getElementById("answer4").checked;
+    const satisfiedYes = document.getElementById("satisfied1").checked;
+    const satisfiedNo = document.getElementById("satisfied2").checked;
 
     // 2. Validate Text/Textarea fields (basic empty check)
     let isValid=true;
@@ -52,3 +52,31 @@ function my_js_function() {
     
     return false;
 } 
+
+
+const counters = document.querySelectorAll('.counter');
+let started = false;
+
+window.addEventListener('scroll', () => {
+    let sectionTop = document.querySelector('.counter-section').offsetTop;
+
+    if (window.scrollY + window.innerHeight > sectionTop && !started) {
+        counters.forEach(counter => {
+            let target = +counter.getAttribute("data-target");
+            let count = 0;
+
+            let speed = target / 100; // Smooth speed
+
+            let interval = setInterval(() => {
+                if (count < target) {
+                    count += Math.ceil(speed);
+                    counter.innerText = count;
+                } else {
+                    counter.innerText = target;
+                    clearInterval(interval);
+                }
+            }, 20);
+        });
+        started = true;
+    }
+});
