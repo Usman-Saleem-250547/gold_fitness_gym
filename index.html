@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gold Fitness Gym</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+
+        .hero {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            place-items: center;
+            /* background-color: black; */
+            min-height: 600px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .choose {
+            /* background-color: #ddd; */
+            display: grid;
+            grid-template-columns: 50% 50%;
+            place-items: center;
+            min-height: 600px;
+            width: 80%;
+            margin: auto;
+        }
+
+        ul {
+            list-style-image: url('./images/right-arrow.png');
+        }
+    </style>
 </head>
 
 <body>
@@ -40,17 +66,37 @@
     </header>
     <hr>
 
-    <!-- main body -->
-    <div style="display: grid; grid-template-columns: 50% 50%; place-items: center; background-color: black; min-height: 600px;">
-        <div>
-            <h2 style="color: white;">It's time to man up!</h2>
-            <h3 style="color: #ffd000;">Join our gym today.</h3>
-            <div class="btn">
-                <a href="#readmore" class="btn">Read More</a>
+    <!-- hero container -->
+    <div class="containers" style="background-color: black;">
+        <div class="hero">
+            <div>
+                <h1 style="color: white;">It's time to man up!</h1>
+                <h2 style="color: #ffd000;">Join our gym today.</h2>
+                <div class="btn" style="width: 190px;">
+                    <a href="#readmore" class="btn">Read More</a>
+                </div>
+            </div>
+            <div>
+                <img style="height: 500px;" src="./images/body_builder.jpg" alt="body builder image">
             </div>
         </div>
-        <div>
-            <img style="height: 600px;" src="./images/body_builder.jpg" alt="body builder image">
+    </div>
+
+    <!-- choose us container -->
+    <div class="containers" style="background-color: #ddd;">
+        <div class="choose" id="readmore">
+            <div>
+                <img style="height: 500px;" src="./images/b602461689edd82e49c706b9a13d6f34.jpg" alt="body builder image">
+            </div>
+            <div>
+                <h1>Why choose us?</h1>
+                <ul>
+                    <li>😡 We motivate you!</li>
+                    <li>🏋️‍♂️ We empower you!</li>
+                    <li>💪 We transform you into a true man!</li>
+                    <li>😎 We turn you into the TopG!</li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -60,11 +106,14 @@
     <footer>
         <hr>
         <div id="socials">
-            <h2>Connect with us on  socials</h2>
+            <h2>Connect with us on socials</h2>
             <div id="social-links">
-                <a target="_blank" href="https://www.facebook.com/"><img src="./images/facebook.png" alt="facebook social image"></a>
-                <a target="_blank" href="https://www.instagram.com/"><img src="./images/instagram.png" alt="instagram social image"></a>
-                <a target="_blank" href="https://www.tiktok.com/"><img src="./images/tiktok.png" alt="tiktok social image"></a>
+                <a target="_blank" href="https://www.facebook.com/"><img src="./images/facebook.png"
+                        alt="facebook social image"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="./images/instagram.png"
+                        alt="instagram social image"></a>
+                <a target="_blank" href="https://www.tiktok.com/"><img src="./images/tiktok.png"
+                        alt="tiktok social image"></a>
             </div>
         </div>
         <hr>
